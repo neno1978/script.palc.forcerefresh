@@ -1,7 +1,7 @@
-script.pulsar.torrentleech
+script.pulsar.xByte
 ==========================
 
-TorrentLeech Pulsar provider for XBMC
+xByte Pulsar provider for XBMC
 
 Note
 ==========================
