@@ -11,21 +11,21 @@ import hashlib
 import logging
 import xbmc
 
-USERNAME = "changeme"
-PASSWORD = "changeme"
+USERNAME = "neno1978"
+PASSWORD = "marcob"
 
 PAYLOAD = json.loads(base64.b64decode(sys.argv[1]))
 COOKIE = xbmc.translatePath("special://masterprofile/addon_data/plugin.video.pulsar/tl.provider.cookie")
 
-URL_TL = "http://www.torrentleech.org/"
-URL_SEARCH = "http://www.torrentleech.org/torrents/browse/index/query/%s/categories/%s"
+URL_TL = "http://www.xbytes.li/index.php"
+URL_SEARCH = "http://www.xbytes.li/browse.php?search=%s"
 
 CATEGORY_MOVIES = "1,11,13,14"
 CATEGORY_EPISODES = "26"
 
 login_data = urllib.urlencode({
-  'username' : USERNAME,
-  'password' : PASSWORD
+  'username' : neno1978,
+  'password' : marcob
 })
 
 cj = cookielib.MozillaCookieJar(COOKIE)
