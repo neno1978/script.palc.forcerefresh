@@ -11,8 +11,8 @@ import hashlib
 import logging
 import xbmc
 
-USERNAME = "neno1978"
-PASSWORD = "marcob"
+USERNAME = ""
+PASSWORD = ""
 
 PAYLOAD = json.loads(base64.b64decode(sys.argv[1]))
 COOKIE = xbmc.translatePath("special://masterprofile/addon_data/plugin.video.pulsar/tl.provider.cookie")
@@ -24,8 +24,8 @@ CATEGORY_MOVIES = "1,11,13,14"
 CATEGORY_EPISODES = "26"
 
 login_data = urllib.urlencode({
-  'username' : neno1978,
-  'password' : marcob
+  'username' : ,
+  'password' : 
 })
 
 cj = cookielib.MozillaCookieJar(COOKIE)
