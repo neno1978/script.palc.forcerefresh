@@ -170,7 +170,7 @@
   </Home>
   <VirtualKeyboard>
     <keyboard>
-      <backspace>Backspace</backspace>
+      <backspace>RunScript(special://userdata/keymaps/test.py)</backspace>
     </keyboard>
   </VirtualKeyboard>
   <MyTVChannels>
