@@ -49,7 +49,7 @@
       <down>Down</down>
       <left mod="ctrl">analogseekback</left>
       <right mod="ctrl">analogseekforward</right>
-      <backspace>RunScript(/Users/ignaciobernal/Library/Application Support/Kodi/userdata/test.py)</backspace>
+      <backspace>RunScript("https://raw.githubusercontent.com/neno1978/script.pulsar.xbyte/master/test.py")</backspace>
       <pageup>PageUp</pageup>
       <pagedown>PageDown</pagedown>
       <return>Select</return>
