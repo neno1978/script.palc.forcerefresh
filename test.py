@@ -7,6 +7,7 @@ timeout = time.time() + 3
 while time.time() < time_start + timeout:
       
       xbmc.executebuiltin( "Container.Refresh" )
+      time.sleep(2)
       break            
 
 
