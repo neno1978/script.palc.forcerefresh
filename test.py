@@ -1,11 +1,8 @@
 import xbmc, time
+import subprocess
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(3)
-xbmc.executebuiltin( "Container.Refresh" )
-pepe=xbmc.executebuiltin( "Container.Refresh" )
-while pepe:
-      print "ooooooo"
-print "uuuuuuuu"      
+subprocess.call (xbmc.executebuiltin( "Container.Refresh" ))     
 
      
       
