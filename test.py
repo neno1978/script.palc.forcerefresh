@@ -1,8 +1,9 @@
 import xbmc, time
 xbmc.executebuiltin( "XBMC.Action(back)" )
-time.sleep(3)
-xbmc.executebuiltin( "Container.Refresh" )
-
+pepe = time.sleep(3)
+while True:
+     xbmc.executebuiltin( "Container.Refresh" )
+print "funciono?"
 
 
   
