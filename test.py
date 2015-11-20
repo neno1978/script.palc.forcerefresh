@@ -1,9 +1,13 @@
 import xbmc, time
 xbmc.executebuiltin( "XBMC.Action(back)" )
-pepe = time.sleep(3)
-while True:
+timeout_start = time.time()
+timeout = 3
+while time.time() < timeout_start + timeout:
+     test = 0
      xbmc.executebuiltin( "Container.Refresh" )
-print "funciono?"
+     if test == timeout:
+        break  
+
 
 
   
