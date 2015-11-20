@@ -1,6 +1,9 @@
 import xbmc, time
 xbmc.executebuiltin( "XBMC.Action(back)" )
-time.sleep(3) + xbmc.executebuiltin( "Container.Refresh" )  + time.sleep(1) 
+timeout = time.time() + 5
+while timeout >5
+
+      xbmc.executebuiltin( "Container.Refresh" )  
 
      
       
