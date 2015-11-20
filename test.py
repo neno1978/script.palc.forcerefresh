@@ -1,9 +1,9 @@
 import xbmc, time
+from subprocess import popen
 xbmc.executebuiltin( "XBMC.Action(back)" )
-timeout = time.time() + 5
-while timeout >5 :
-
-      xbmc.executebuiltin( "Container.Refresh" )  
+process = popen( xbmc.executebuiltin( "Container.Refresh" ))
+process.wait()
+  
 
      
       
