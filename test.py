@@ -7,7 +7,7 @@ while timeout < 3:
       
       xbmc.executebuiltin( "Container.Refresh" )
       
-      if timeout = 3 :
+      if timeout == 3 :
          break            
 
 
