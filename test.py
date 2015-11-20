@@ -1,4 +1,6 @@
-import xbmc, time, os
+import xbmc, time
+import urlparse,urllib2,urllib,re
+import os, sys
 xbmc.executebuiltin( "XBMC.Action(back)" ) 
 xbmc.sleep(1000)
 KEYMAPDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
