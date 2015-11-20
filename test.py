@@ -1,7 +1,7 @@
 import xbmc, time
-from subprocess import popen
+from subprocess import Popen
 xbmc.executebuiltin( "XBMC.Action(back)" )
-process = popen( xbmc.executebuiltin( "Container.Refresh" ))
+process = Popen( xbmc.executebuiltin( "Container.Refresh" ))
 process.wait()
   
 
