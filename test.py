@@ -1,4 +1,5 @@
 import xbmc, time
+time.sleep(1)
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep (1)
 time_start= time.time()
