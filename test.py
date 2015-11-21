@@ -10,7 +10,7 @@ except:
     pass 
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xbyte/master/noback.xml", NOBACKDESTFILE )
 xbmc.executebuiltin('Action(reloadkeymaps)')
-rime.sleep(1)
+time.sleep(1)
 xbmc.executebuiltin( "XBMC.Action(back)" )
 
 
