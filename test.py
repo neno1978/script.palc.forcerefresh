@@ -2,7 +2,6 @@ import xbmc, time
 import urlparse,urllib2,urllib,re
 import os, sys
 xbmc.executebuiltin( "XBMC.Action(back)" ) 
-xbmc.sleep(1000)
 NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
 CUSTOMKEYDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "customkey.xml")
 try:
@@ -14,6 +13,7 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xb
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
+xbmc.sleep(1000)
 try:
    os.remove(NOBACKDESTFILE)
 except:
