@@ -19,7 +19,7 @@ try:
    os.remove(NOBACKDESTFILE)
 except:
    pass    
-urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xbyte/master/customkey.xml", CUSTOMKEYDESTFILE )
+
 xbmc.executebuiltin('Action(reloadkeymaps)') 
 
 
