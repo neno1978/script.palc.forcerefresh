@@ -14,7 +14,7 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xb
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
-time.sleep(4)
+time.sleep(2)
 try:
    os.remove(NOBACKDESTFILE)
 except:
