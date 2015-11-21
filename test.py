@@ -14,12 +14,11 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xb
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
-time.sleep(1)
 try:
    os.remove(NOBACKDESTFILE)
 except:
    pass    
-time.sleep(2)
+time.sleep(3)
 TESTPYDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "test.py")
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xbyte/master/test.py", TESTPYDESTFILE )
 KEYMAPDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "customkey.xml")
