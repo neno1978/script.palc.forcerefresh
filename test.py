@@ -8,11 +8,11 @@ CUSTOMKEYDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xbyte/master/noback.xml", NOBACKDESTFILE )
 xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "Container.Refresh" )
+time.sleep(8)
 try:
    os.remove(NOBACKDESTFILE)
 except:
    pass    
-time.sleep(8)
 
 xbmc.executebuiltin('Action(reloadkeymaps)') 
 
