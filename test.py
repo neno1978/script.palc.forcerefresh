@@ -12,7 +12,7 @@ try:
    os.remove(NOBACKDESTFILE)
 except:
    pass    
-time.sleep(3)
+time.sleep(8)
 
 xbmc.executebuiltin('Action(reloadkeymaps)') 
 
