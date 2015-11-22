@@ -7,6 +7,7 @@ CUSTOMKEYDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'
 
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xbyte/master/noback.xml", NOBACKDESTFILE )
 xbmc.executebuiltin('Action(reloadkeymaps)')
+print "que pasa"
 xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
 try:
