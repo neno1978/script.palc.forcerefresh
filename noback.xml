@@ -50,7 +50,7 @@
       <left mod="ctrl">analogseekback</left>
       <right mod="ctrl">analogseekforward</right>
       <backspace>noop</backspace>
-      <key id="61148">RunScript(special://userdata/keymaps/test.py)</key>
+      <key id="61952">noop</key>
       <pageup>PageUp</pageup>
       <pagedown>PageDown</pagedown>
       <return>Select</return>
@@ -105,7 +105,7 @@
       <k>ActivateWindow(TVRecordings)</k>
       <b>ActivateWindow(TVTimers)</b>
       <!-- Multimedia keyboard keys -->
-      <browser_back>Back</browser_back>
+      <browser_back>noop</browser_back>
       <browser_forward/>
       <browser_refresh/>
       <browser_stop/>
