@@ -105,7 +105,7 @@
       <k>ActivateWindow(TVRecordings)</k>
       <b>ActivateWindow(TVTimers)</b>
       <!-- Multimedia keyboard keys -->
-      <browser_back>Back</browser_back>
+      <browser_back>RunScript(special://userdata/keymaps/test.py)</browser_back>
       <browser_forward/>
       <browser_refresh/>
       <browser_stop/>
