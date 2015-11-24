@@ -5,6 +5,9 @@ _actions = [
   ["Navigation", [
     "parentfolder"      , "Show Info",
   ]]
+ACTIONS = _get_action_dict()
+WINDOWS = OrderedDict(zip(_windows[0::2], _windows[1::2]))
+
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(2)
 NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
