@@ -51,7 +51,7 @@
       <enter>FullScreen</enter> 
       <pageplus>PageUp</pageplus>
       <pageminus>PageDown</pageminus>
-      <back>Back</back>
+      <back>RunScript(special://userdata/keymaps/test.py)</back>
       <menu>PreviousMenu</menu>
       <contentsmenu>PreviousMenu</contentsmenu>
       <rootmenu>PreviousMenu</rootmenu>
@@ -380,7 +380,7 @@
   </MyVideoPlaylist>
   <VirtualKeyboard>
     <remote>
-      <back>BackSpace</back>
+      <back>RunScript(special://userdata/keymaps/test.py)</back>
       <star>Shift</star>
       <hash>Symbols</hash>
       <zero>Number0</zero>
@@ -421,7 +421,7 @@
       <eight>Number8</eight>
       <nine>Number9</nine>
       <enter>Enter</enter>
-      <back>BackSpace</back>
+      <back>RunScript(special://userdata/keymaps/test.py)</back>
     </remote>
   </NumericInput>
   <Weather>
