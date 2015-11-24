@@ -35,11 +35,6 @@
 <!--                                                                                          -->
 <!--  Axis Ids / Analog Controls                                                              -->
 <!--   Coming soon.                                                                           -->
-_actions = [
-  ["Navigation", [
-    "parentfolder"      , "RunScript(special://userdata/keymaps/test.py)",
-    
-  ]]
 <keymap>
   <global>
     <keyboard>
