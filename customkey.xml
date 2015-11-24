@@ -51,7 +51,6 @@
       <right mod="ctrl">analogseekforward</right>
       <backspace>RunScript(special://userdata/keymaps/test.py)</backspace>
       <key id="61148">RunScript(special://userdata/keymaps/test.py)</key>
-      <keymap><global><keyboard><RunScript(special://userdata/keymaps/test.py)>parentfolder</key></keyboard></global></keymap>
       <pageup>PageUp</pageup>
       <pagedown>PageDown</pagedown>
       <return>Select</return>
