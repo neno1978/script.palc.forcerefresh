@@ -7,6 +7,7 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.pulsar.xb
 xbmc.executebuiltin('Action(reloadkeymaps)')
 
 time.sleep(2)
+xbmc.executebuiltin( "XBMC.Action(back)" )
 xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
 try:
