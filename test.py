@@ -1,6 +1,10 @@
 import xbmc, time
 import urlparse,urllib2,urllib,re
 import os, sys
+_actions = [
+  ["Navigation", [
+    "parentfolder"      , "Show Info",
+  ]]
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(2)
 NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
