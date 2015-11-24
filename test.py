@@ -5,6 +5,21 @@ _actions = [
   ["Navigation", [
     "parentfolder"      , "Show Info",
   ]]
+def _get_activate_window_actions():
+    all_windows = _activate_window + _windows[2:] #don't include "global"
+    actions = ["activatewindow(%s)" % w_id for w_id in all_windows[0::2]]
+    names = ["Open %s" % w for w in all_windows[1::2]]
+    return action_dict(actions, names)
+
+
+def _get_action_dict():
+    """ Map actions to 'category name'->'action id'->'action name' dict"""
+    d = OrderedDict()
+    for elem in _actions:
+        category = elem[0]
+        actions = elem[1][0::2]
+        names = elem[1][1::2]
+        d[category] = OrderedDict(zip(actions, names))  
 ACTIONS = _get_action_dict()
 WINDOWS = OrderedDict(zip(_windows[0::2], _windows[1::2]))
 
