@@ -5,6 +5,28 @@ _actions = [
   ["Navigation", [
     "parentfolder"      , "Show Info",
   ]]
+from collections_backport import OrderedDict
+from utils import rpc
+import xbmc
+
+
+def action_dict(actions, action_names):
+    """Create dict of action->name sorted by name"""
+    return OrderedDict(sorted(zip(actions, action_names), key=lambda t: t[1]))
+
+
+def _get_run_addon_actions():
+    addons = []
+    addon_types = ['xbmc.python.pluginsource', 'xbmc.python.script']
+    for addon_type in addon_types:
+        response = rpc('Addons.GetAddons', type=addon_type, properties=['name', 'enabled'])
+        res = response['result']
+        if 'addons' in res:
+            addons.extend([a for a in res['addons'] if a['enabled']])
+    actions = ['runaddon(%s)' % a['addonid'] for a in addons]
+    names = ['Launch %s' % a['name'] for a in addons]
+    return action_dict(actions, names)
+  
 def _get_activate_window_actions():
     all_windows = _activate_window + _windows[2:] #don't include "global"
     actions = ["activatewindow(%s)" % w_id for w_id in all_windows[0::2]]
