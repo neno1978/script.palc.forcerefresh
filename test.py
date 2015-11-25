@@ -7,7 +7,7 @@ xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(2)
 xbmc.executebuiltin( "Container.Refresh" )
-if item.plot == "song"
+if item.plot == "song":
    time.sleep(5)
 else:   
    time.sleep(3)
