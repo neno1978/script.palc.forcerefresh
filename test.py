@@ -7,7 +7,7 @@ xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
-time.sleep(1)
+time.sleep(2)
 try:
    os.remove(NOBACKDESTFILE)
 except:
