@@ -5,7 +5,6 @@ NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), 
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/noback.xml", NOBACKDESTFILE )
 xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "XBMC.Action(back)" )
-time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(2)
 try:
