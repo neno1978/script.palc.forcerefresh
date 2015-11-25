@@ -7,10 +7,7 @@ xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(2)
 xbmc.executebuiltin( "Container.Refresh" )
-if item.plot == "song":
-   time.sleep(5)
-else:   
-   time.sleep(3)
+time.sleep(4)
 try:
    os.remove(NOBACKDESTFILE)
 except:
