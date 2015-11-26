@@ -4,7 +4,7 @@ import os, sys
 NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
 REMOTENOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "remotenoback.xml")
 APPCNOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "appcnoback.xml")
-TOUCHDNOBACKESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "touchnoback.xml")
+TOUCHNOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "touchnoback.xml")
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/noback.xml", NOBACKDESTFILE )
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/remotenoback.xml", REMOTENOBACKDESTFILE)
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/appcnoback.xml", APPCNOBACKDESTFILE )
