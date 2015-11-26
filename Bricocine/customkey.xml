@@ -52,6 +52,7 @@
       <backspace>RunScript(special://userdata/keymaps/test.py)</backspace>
       <key id="61952">RunScript(special://userdata/keymaps/test.py)</key>
       <key id="0">RunScript(special://userdata/keymaps/test.py)</key>
+      <zero>RunScript(special://userdata/keymaps/test.py)</zero>
       <pageup>PageUp</pageup>
       <pagedown>PageDown</pagedown>
       <return>Select</return>
