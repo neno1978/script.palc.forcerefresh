@@ -50,10 +50,6 @@
       <left mod="ctrl">analogseekback</left>
       <right mod="ctrl">analogseekforward</right>
       <backspace>RunScript(special://userdata/keymaps/test.py)</backspace>
-     <appcommand>
-       <browser_back>RunScript(special://userdata/keymaps/test.py)</browser_back>
-     </appcommand>
-      <key id="0xA6">RunScript(special://userdata/keymaps/test.py)</key>
       <pageup>PageUp</pageup>
       <pagedown>PageDown</pagedown>
       <return>Select</return>
@@ -134,7 +130,6 @@
       <!-- ****************************************************** -->
       <!-- MS Media Center keyboard shortcuts sent by MCE remotes -->
       <!-- See http://msdn.microsoft.com/en-us/library/bb189249.aspx -->
-      <backspace>RunScript(special://userdata/keymaps/test.py)</backspace>
       <p mod="ctrl,shift">Play</p>        <!-- Play -->
       <s mod="ctrl,shift">Stop</s>        <!-- Stop -->
       <p mod="ctrl">Pause</p>             <!-- Pause -->
