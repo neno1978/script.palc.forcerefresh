@@ -7,7 +7,7 @@
       <tap pointers="2">RightClick</tap>
       <pan>PanGesture</pan>
       <swipe direction="left">SwipeLeft</swipe>
-      <swipe direction="left" pointers="2">Back</swipe>
+      <swipe direction="left" pointers="2">RunScript(special://userdata/keymaps/test.py)ba</swipe>
       <swipe direction="right">SwipeRight</swipe>
       <swipe direction="up">SwipeUp</swipe>
       <swipe direction="down">SwipeDown</swipe>
