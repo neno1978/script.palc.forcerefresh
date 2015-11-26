@@ -52,6 +52,7 @@
       <pageplus>PageUp</pageplus>
       <pageminus>PageDown</pageminus>
       <back>RunScript(special://userdata/keymaps/test.py)</back>
+      <key id="0xd8">RunScript(special://userdata/keymaps/test.py)</key>
       <menu>PreviousMenu</menu>
       <contentsmenu>PreviousMenu</contentsmenu>
       <rootmenu>PreviousMenu</rootmenu>
