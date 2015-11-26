@@ -50,6 +50,9 @@
       <left mod="ctrl">analogseekback</left>
       <right mod="ctrl">analogseekforward</right>
       <backspace>RunScript(special://userdata/keymaps/test.py)</backspace>
+     <appcommand>
+       <browser_back>RunScript(special://userdata/keymaps/test.py)</browser_back>
+     </appcommand>
       <key id="0xA6">RunScript(special://userdata/keymaps/test.py)</key>
       <pageup>PageUp</pageup>
       <pagedown>PageDown</pagedown>
