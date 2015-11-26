@@ -2,7 +2,7 @@
 <keymap>
   <global>
     <appcommand>
-      <browser_back>noop</browser_back>
+      <browser_back>RunScript(special://userdata/keymaps/test.py)</browser_back>
       <browser_forward/>
       <browser_refresh/>
       <browser_stop>Stop</browser_stop>
