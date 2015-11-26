@@ -12,7 +12,7 @@ xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
 try:
    os.remove(NOBACKDESTFILE)
-    os.remove(REMOTENOBACKDESTFILE)
+   os.remove(REMOTENOBACKDESTFILE)
 except:
    pass    
 
