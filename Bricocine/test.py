@@ -6,7 +6,7 @@ REMOTENOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keyma
 APPCNOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "appcnoback.xml")
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/noback.xml", NOBACKDESTFILE )
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/remotenoback.xml", REMOTENOBACKDESTFILE)
-urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/appcnoback.xml", APPCNOBACKDESTFILE )
+urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/appcnoback.xml", APPCNOBACKDESTFILE )
 xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(1)
