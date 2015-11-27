@@ -1,7 +1,6 @@
 import xbmc, time
 import urlparse,urllib2,urllib,re
 import os, sys
-xbmc.sleep(200)
 NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
 REMOTENOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "remotenoback.xml")
 APPCNOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "appcnoback.xml")
