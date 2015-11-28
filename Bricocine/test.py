@@ -1,6 +1,11 @@
 import xbmc, time
 import urlparse,urllib2,urllib,re
 import os, sys
+APPCOMMANDDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "customapp.xml")
+try:
+   os.remove(APPCOMMANDDESTFILE)
+except:
+   pass
 NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
 REMOTENOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "remotenoback.xml")
 APPNOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "appnoback.xml")
