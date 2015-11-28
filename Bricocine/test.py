@@ -21,6 +21,7 @@ try:
    os.remove(NOBACKDESTFILE)
    os.remove(REMOTENOBACKDESTFILE)
    os.remove(APPNOBACKDESTFILE)
+   urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/customapp.xml", APPCOMMANDDESTFILE )
 except:
    pass    
 
