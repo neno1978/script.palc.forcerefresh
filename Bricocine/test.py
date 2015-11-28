@@ -1,6 +1,8 @@
 import xbmc, time
 import urlparse,urllib2,urllib,re
 import os, sys
+xbmc.executebuiltin( "XBMC.Action(back)" )
+time.sleep(1)
 APPCOMMANDDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "customapp.xml")
 try:
    os.remove(APPCOMMANDDESTFILE)
@@ -14,8 +16,6 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forc
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/remotenoback.xml", REMOTENOBACKDESTFILE)
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/appnoback.xml", APPNOBACKDESTFILE )
 xbmc.executebuiltin('Action(reloadkeymaps)')
-xbmc.executebuiltin( "XBMC.Action(back)" )
-time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
 try:
