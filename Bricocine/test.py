@@ -22,7 +22,7 @@ try:
    os.remove(NOBACKDESTFILE)
    os.remove(REMOTENOBACKDESTFILE)
    os.remove(APPNOBACKDESTFILE)
-   if "test.py" in TESTPYDESTFILE:
+   if os.path.exists ( TESTPYDESTFILE ):
        urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/customapp.xml", APPCOMMANDDESTFILE )
    else:
        print "no testpy"
