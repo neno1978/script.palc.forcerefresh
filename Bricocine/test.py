@@ -13,9 +13,9 @@ APPNOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/noback.xml", NOBACKDESTFILE )
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/remotenoback.xml", REMOTENOBACKDESTFILE)
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/appnoback.xml", APPNOBACKDESTFILE )
+xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(1)
-xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
 try:
