@@ -14,6 +14,7 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forc
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/remotenoback.xml", REMOTENOBACKDESTFILE)
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/appnoback.xml", APPNOBACKDESTFILE )
 xbmc.executebuiltin( "XBMC.Action(back)" )
+time.sleep(1)
 xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
