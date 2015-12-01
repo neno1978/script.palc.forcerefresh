@@ -17,7 +17,7 @@ APPCOMMANDDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
-time.sleep(3)
+time.sleep(1)
 try:
    os.remove(NOBACKDESTFILE)
    os.remove(REMOTENOBACKDESTFILE)
