@@ -1,0 +1,1 @@
+Este archivo solo evita que se refresque cuando vuelve a busqueda, evitando asi que salte la ventana sin haber sido solicitada
