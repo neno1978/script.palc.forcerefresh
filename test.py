@@ -1,6 +1,7 @@
 import xbmc, time
 import urlparse,urllib2,urllib,re
 import os, sys
+APPCOMMANDDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "customapp.xml")
 try:
    os.remove(APPCOMMANDDESTFILE)
 except:
