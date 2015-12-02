@@ -6,8 +6,8 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forc
 xbmc.executebuiltin('Action(reloadkeymaps)')
 xbmc.executebuiltin( "XBMC.Action(back)" )
 time.sleep(1)
-if xbmc.Player().isPlaying():
-       xbmc.executebuiltin('xbmc.PlayMedia(Stop)')
+xbmc.executebuiltin( "Container.Refresh" )
+
 try:
    os.remove(NOBACKDESTFILE)
 except:
