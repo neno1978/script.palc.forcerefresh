@@ -17,8 +17,7 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forc
 APPCOMMANDDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "customapp.xml")
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
-if not os.path.exists ( SEARCHDESTIFILE ):
-   xbmc.executebuiltin( "Container.Refresh" )
+xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
 try:
    os.remove(NOBACKDESTFILE)
