@@ -17,14 +17,7 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forc
 APPCOMMANDDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "customapp.xml")
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
-if os.path.exists ( SEARCHDESTIFILE ):
-   if os.path.exists ( TESTPYDESTFILE ):
-      xbmc.executebuiltin( "Container.Refresh" )
-   else:
-      if xbmc.Player().isPlaying():
-       xbmc.executebuiltin('xbmc.PlayMedia(Stop)')
-else:       
-     xbmc.executebuiltin( "Container.Refresh" )
+xbmc.executebuiltin( "Container.Refresh" )
 time.sleep(3)
 try:
    os.remove(NOBACKDESTFILE)
