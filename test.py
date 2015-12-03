@@ -1,3 +1,4 @@
+#test.py para el buscador 
 import xbmc, time
 import urlparse,urllib2,urllib,re
 import os, sys
