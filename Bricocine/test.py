@@ -29,7 +29,7 @@ try:
        xbmc.executebuiltin('Action(reloadkeymaps)') 
    else:
       xbmc.executebuiltin('Action(reloadkeymaps)') 
-       print "no testpy"
+      print "no testpy"
 except:
    pass    
 xbmc.executebuiltin('Action(reloadkeymaps)') 
