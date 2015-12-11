@@ -7,7 +7,7 @@ urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forc
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
-time.sleep(2)
+time.sleep(3)
 try:
    os.remove(NOBACKDESTFILE)
 except:
