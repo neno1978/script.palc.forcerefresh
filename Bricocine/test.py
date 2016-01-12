@@ -26,7 +26,8 @@ try:
    os.remove(APPNOBACKDESTFILE)
    if os.path.exists ( TESTPYDESTFILE ):
        urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/customapp.xml", APPCOMMANDDESTFILE )
-       xbmc.executebuiltin('Action(reloadkeymaps)') 
+       xbmc.executebuiltin('Action(reloadkeymaps)')
+   xbmc.executebuiltin('Action(reloadkeymaps)')    
    else:
       xbmc.executebuiltin('Action(reloadkeymaps)') 
       print "no testpy"
