@@ -18,15 +18,18 @@ APPCOMMANDDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps
 xbmc.executebuiltin('Action(reloadkeymaps)')
 time.sleep(1)
 xbmc.executebuiltin( "Container.Refresh" )
-time.sleep(3)
+time.sleep(2)
 try:
    os.remove(NOBACKDESTFILE)
    os.remove(REMOTENOBACKDESTFILE)
    os.remove(APPNOBACKDESTFILE)
+   xbmc.executebuiltin( "Container.Refresh" )
    if os.path.exists ( TESTPYDESTFILE ):
        urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/customapp.xml", APPCOMMANDDESTFILE )
+       xbmc.executebuiltin( "Container.Refresh" )
    else:
        print "no testpy"
+       xbmc.executebuiltin( "Container.Refresh" )
 except:
    pass    
 
