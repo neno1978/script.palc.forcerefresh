@@ -11,6 +11,7 @@ TESTPYDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), 
 NOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "noback.xml")
 REMOTENOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "remotenoback.xml")
 APPNOBACKDESTFILE = os.path.join(xbmc.translatePath('special://userdata/keymaps'), "appnoback.xml")
+SEARCHDESTIFILE= os.path.join(xbmc.translatePath('special://userdata/keymaps'), "search.txt")
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/noback.xml", NOBACKDESTFILE )
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/remotenoback.xml", REMOTENOBACKDESTFILE)
 urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/appnoback.xml", APPNOBACKDESTFILE )
@@ -23,14 +24,12 @@ try:
    os.remove(NOBACKDESTFILE)
    os.remove(REMOTENOBACKDESTFILE)
    os.remove(APPNOBACKDESTFILE)
-   xbmc.executebuiltin( "Container.Refresh" )
    if os.path.exists ( TESTPYDESTFILE ):
        urllib.urlretrieve ("https://raw.githubusercontent.com/neno1978/script.palc.forcerefresh/master/Bricocine/customapp.xml", APPCOMMANDDESTFILE )
-       xbmc.executebuiltin( "Container.Refresh" )
+       xbmc.executebuiltin('Action(reloadkeymaps)')
    else:
-       print "no testpy"
-       xbmc.executebuiltin( "Container.Refresh" )
+      xbmc.executebuiltin('Action(reloadkeymaps)') 
+      print "no testpy"
 except:
    pass    
-
 xbmc.executebuiltin('Action(reloadkeymaps)')
